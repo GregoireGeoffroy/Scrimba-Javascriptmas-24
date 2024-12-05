@@ -25,10 +25,7 @@ body {
     min-width: 320px;
     min-height: 100vh;
     overflow: hidden;
-    background-image: url('/xmasMovieBg.avif');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background: var(--background-color);
 }
 
 #app {
@@ -158,8 +155,8 @@ body {
 }
 
 .calendar-box {
-    background-color: var(--calendar-text);
-    color: #FFFFFF;
+    background-color: var(--primary-color);
+    color: white;
     font-size: 14px;
     text-align: center;
     padding: 15px;
@@ -176,8 +173,8 @@ body {
 .calendar-box:hover {
     transform: scale(1.1);
     box-shadow: 0 6px 12px rgba(242, 24, 4, 0.7);
-    background-color: var(--calendar-accent);
-    color: var(--calendar-text);
+    background-color: var(--secondary-color);
+    color: white;
 }
 
 /* Day 3 - Santa's Emoji Hack */
@@ -319,7 +316,7 @@ body {
     }
 
     .challenges-nav button:hover {
-        transform: translateY(-2px);
+        transform: scale(1.05);
     }
 
     .calendar-container {
@@ -418,13 +415,13 @@ body {
 }
 
 .anagram-pair.valid {
-    background: #e8f5e9;
-    border: 1px solid #4caf50;
+    background: rgba(255, 65, 65, 0.1);
+    border: 1px solid var(--primary-color);
 }
 
 .anagram-pair.invalid {
-    background: #ffebee;
-    border: 1px solid #f44336;
+    background: var(--background-color);
+    border: 1px solid var(--border-color);
 }
 
 .results {
